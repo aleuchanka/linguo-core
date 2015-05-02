@@ -1,8 +1,9 @@
 package au.com.lingvo.config;
 
+import au.com.lingvo.filters.SimpleCORSFilter;
+import org.springframework.data.rest.webmvc.RepositoryRestDispatcherServlet;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
-import org.springframework.web.servlet.DispatcherServlet;
 
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -14,9 +15,12 @@ public class WebAppInitializer implements WebApplicationInitializer {
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
         ctx.register(AppConfig.class);
         ctx.setServletContext(servletContext);
-        Dynamic dynamic = servletContext.addServlet("dispatcher", new DispatcherServlet(ctx));
+        Dynamic dynamic = servletContext.addServlet("dispatcher", new RepositoryRestDispatcherServlet(ctx));
         dynamic.addMapping("/*");
         dynamic.setLoadOnStartup(1);
+
+        servletContext.addFilter("simpleCORSFilter", new SimpleCORSFilter()).
+                addMappingForUrlPatterns(null, false, "/*");
     }
 
 }
