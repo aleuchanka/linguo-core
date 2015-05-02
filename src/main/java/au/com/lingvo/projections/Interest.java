@@ -1,1 +1,0 @@
-package au.com.lingvo.projections;import au.com.lingvo.domain.ProfileInterestLanguage;import org.springframework.data.rest.core.config.Projection;@Projection(name = "noInterest", types = {ProfileInterestLanguage.class, ProfileInterestLanguage.class})public interface Interest {    Long getId();}
