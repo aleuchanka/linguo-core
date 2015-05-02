@@ -1,0 +1,1 @@
+package au.com.lingvo.domain;public enum LanguageLevel {    BASIC, INTERMEDIATE}

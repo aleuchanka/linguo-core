@@ -1,0 +1,1 @@
+package au.com.lingvo.repo;import au.com.lingvo.domain.Location;import org.springframework.data.repository.PagingAndSortingRepository;//@RepositoryRestResource(collectionResourceRel = "location", path = "location")public interface LocationRepository extends PagingAndSortingRepository<Location, Long> {}
