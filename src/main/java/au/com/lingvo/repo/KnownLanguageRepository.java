@@ -1,1 +1,0 @@
-package au.com.lingvo.repo;import au.com.lingvo.domain.ProfileKnownLanguage;import org.springframework.data.repository.PagingAndSortingRepository;import org.springframework.data.rest.core.annotation.RepositoryRestResource;@RepositoryRestResourcepublic interface KnownLanguageRepository extends PagingAndSortingRepository<ProfileKnownLanguage, Long> {}

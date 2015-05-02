@@ -1,1 +1,0 @@
-package au.com.lingvo.repo;import java.util.List;public interface ProfileRepositoryCustom {    public List<Long> knownLang(Long profileId);}
