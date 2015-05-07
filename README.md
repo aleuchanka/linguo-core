@@ -1,4 +1,4 @@
-# linguo-core
+#Linguo-core
 Example give simple Spring Data Rest API use case
 #Start
 On local env if maven and java installed you could start it using
