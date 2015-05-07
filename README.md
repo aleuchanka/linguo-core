@@ -2,7 +2,7 @@
 Example give simple Spring Data Rest API use case
 #Start
 On local env if maven and java installed you could start it using
-mvn tomcat7:run
+``` mvn tomcat7:run  ```
 #Description
 Profile has not embed location
 
