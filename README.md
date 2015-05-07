@@ -15,20 +15,20 @@ There example of post in ../linguo-core/src/main/resources
 1 post location to
 http://swap-lingvo-api.elasticbeanstalk.com/location
 
-'''
+```
 {
   "city": "Sydney",
   "country": "country",
   "lat": -1,
   "lng": 1
 }
-'''
+```
 
 post ro profile to create profile
 
 http://swap-lingvo-api.elasticbeanstalk.com/profile
 
-'''
+```
 {
   "email": "email",
   "firstName": "firstName",
@@ -38,7 +38,7 @@ http://swap-lingvo-api.elasticbeanstalk.com/profile
   "location": "http://swap-lingvo-api.elasticbeanstalk.com/location/2",
   "imageUrl": "imageUrl"
 }
-'''
+```
 
 check profile
 http://swap-lingvo-api.elasticbeanstalk.com/profile/2
