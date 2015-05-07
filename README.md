@@ -5,9 +5,10 @@ On local env if maven and java installed you could start it using
 mvn tomcat7:run
 #Description
 Profile has not embed location
+
 Location created separatly
-Application deployed to http://swap-lingvo-api.elasticbeanstalk.com/
-With description of all APIs
+
+Application deployed to with description of all APIs http://swap-lingvo-api.elasticbeanstalk.com/
 
 #Exapmle
 There example of post in ../linguo-core/src/main/resources
